@@ -1,0 +1,85 @@
+body {
+    font-family: 'arial', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f5f5, #c3cfe2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background: #ffffff;
+}
+
+.calculadora {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fafafa;
+    padding: 20px; 
+}
+
+.display {
+    background:tomato;
+    color: blanchedalmond;
+    padding: 20px;
+    text-align: right;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.valor {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button {
+    width: 22%; 
+    padding: 15px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    outline: none;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+button.operador {
+    background: #f2a33c;
+    color: #fff;
+}
+
+button.numero {
+    background: #e0e0e0;
+}
+
+button.col-2 {
+    width: 48%; 
+}
+
+button:hover {
+    background: #ccc;
+    transform: scale(1.05);
+}
+
+button:active {
+    background: #bbb;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #719ECE;
+}
